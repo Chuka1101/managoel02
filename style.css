@@ -1,0 +1,290 @@
+body{
+  background-color: #f4f3ee;
+  position: relative;
+}
+.content{
+  width: 90%;
+  display: inline-block;
+
+}
+.slideshow-navigation{
+  text-align: center;
+}
+
+.logo{
+  width: 100px;
+  margin-top: auto;
+  filter: saturate(1) brightness(1);
+  text-align: center;
+}
+.inner{
+  text-align: center;
+  text-decoration: none;
+}
+.footer-menu{
+  color: #f4f3ee;
+
+}
+.main{
+  width: 90%;
+}
+.zur{
+  text-align: center;
+  width: 110%;
+}
+
+.app-inner{
+  animation: fadeIn .4s ease-in;
+  transition: transform .3s ease-out;
+  display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #f4f3ee;
+    position: absolute;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+
+
+}
+
+
+
+section.container[data-template~=product]
+{
+    font-size: 11px;
+    line-height: 1.4em;
+    min-height: auto;}
+
+.zurag02{
+  width: 500px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+
+
+
+#main-nav {
+  max-width: 30px;
+  left: 0px;
+	position: fixed;
+	z-index: 10;
+	top: 90px;
+	-webkit-transition: all 0.2s ease;
+  	-moz-transition:    all 0.2s ease;
+  	-o-transition:      all 0.2s ease;
+  	transition: 		all 0.2s ease;
+    text-decoration: none;
+
+}
+#main-nav li {
+	height: 40px;
+
+}
+
+#main-nav a {
+	background-color: #ccc;
+	line-height: 40px;
+	display: inline-block;
+	height: 40px;
+	position: relative;
+	border: none;
+	color: #fff;
+	font-size: 0;
+	padding-left: 40px;
+	overflow: hidden;
+	-webkit-transition: all 0.2s ease;
+  	-moz-transition:    all 0.2s ease;
+  	-o-transition:      all 0.2s ease;
+  	transition: 		all 0.2s ease;
+}
+
+#main-nav a:hover {
+	font-size: 10px;
+	padding-right: 20px;
+}
+
+#main-nav .active a {
+	padding-right: 20px;
+}
+
+#nav-about a {
+	background: #fff;
+	color: #222;
+}
+
+#nav-reel a {
+	background: #a1a1a1;
+}
+
+#nav-bats a {
+	background: #DB8F0A;
+}
+
+#nav-crater-lake a {
+	background: #405B69;
+}
+
+#nav-tn-aquarium a {
+	background: #25818A;
+}
+
+#nav-contact a {
+	background: #333;
+}
+
+
+
+
+
+
+nav{
+  display: flex;
+  justify-content: space-around;
+   align-items: center;
+   min-height: 10vh;
+  background-color: transparent;
+  font-family: 'Gayathri', sans-serif;
+  z-index: 1;
+  text-decoration: none;
+
+
+}
+.a01{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 8px;
+}
+.logo{
+  color: #ffdc34;
+  letter-spacing: 5px;
+  font-size: 20px;
+
+}
+.nav-links{
+
+  display: flex;
+  width: 40%;
+justify-content: space-around;
+list-style: none;
+
+}
+.burger{
+  display: none;
+  cursor: pointer;
+}
+.burger div{
+  width: 17px;
+  height: 1px;
+    background-color: #4e4d4b;
+    margin:5px;
+
+}
+@media screen and (max-width:1280px)  {
+  .nav-links{
+    display: flex;
+    width: 40%;
+  justify-content: space-around;
+  list-style: none;
+}
+@media screen and (max-width:768px)  {
+  body{
+    overflow-x: hidden;
+  }
+.nav-links{
+  z-index: 100000;
+  position: fixed;
+  right: 0px;
+  height: 92vh;
+  top: 10vh;
+  background-color: #222831;
+    ackground: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+
+}
+.nav-links li{
+  opacity: 0;
+}
+.burger{
+  display: block;
+
+}
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px );
+  }
+}
+.block{
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.caption{
+  color: #4e4d4b;
+  font-size: 10px;
+}
+
+.wrap{
+  position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 900;
+    height: 50px;
+    background: transparent;
+    padding: 10px 20px;
+    line-height: 30px;
+}
+.inner{
+position: relative;
+  margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+.hamburger{
+  position: absolute;
+    width: 15px;
+    height: 26px;
+    right: 0;
+    top: 4px;
+    cursor: pointer;
+}
+.logoo{
+  margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
